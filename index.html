@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Becas - Stellar Blockchain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Portal Estudiantil de Becas</h1>
+            <span class="badge">Red Stellar Testnet</span>
+        </div>
+    </header>
+
+    <main class="container dashboard">
+        <!-- Resumen de Balance -->
+        <section class="card balance-card">
+            <h2>Balance Actual</h2>
+            <div class="amount">1,250.00 <span class="currency">XLM / USDC</span></div>
+            <p class="wallet-id">Wallet: <code id="user-wallet">GD3X...7K9P</code></p>
+        </section>
+
+        <!-- Accesos / Servicios -->
+        <section class="grid-services">
+            <div class="card service-card">
+                <h3>Transporte</h3>
+                <p>Pago de pasaje estudiantil mediante QR o transferencia directa.</p>
+                <button class="btn">Pagar Transporte</button>
+            </div>
+
+            <div class="card service-card">
+                <h3>Alimentación</h3>
+                <p>Subsidio para comedores y cafetería universitaria.</p>
+                <button class="btn">Pagar Comedor</button>
+            </div>
+
+            <div class="card service-card alert-card">
+                <h3>Biblioteca y Materiales</h3>
+                <p>Multas automáticas por retraso en entrega de libros prestados.</p>
+                <span class="fine-status">Sin multas activas</span>
+            </div>
+        </section>
+
+        <!-- Historial de Transacciones -->
+        <section class="card history-card">
+            <h3>Últimos Movimientos</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Tipo</th>
+                        <th>Monto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Incentivo por Excelencia Académica</td>
+                        <td><span class="tag income">Depósito</span></td>
+                        <td>+150.00</td>
+                        <td>24/10/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Retraso: Cálculo II (Libro)</td>
+                        <td><span class="tag expense">Deducción</span></td>
+                        <td>-15.00</td>
+                        <td>22/10/2026</td>
+                    </tr>
+                    <tr>
+                        <td>Beca Mensual de Alimentación</td>
+                        <td><span class="tag income">Depósito</span></td>
+                        <td>Info</td>
+                        <td>01/10/2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
